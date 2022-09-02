@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+}
+
+.item {
+    list-style: none;
+    float: left;
+    position: relative;
+}
+
+.link, .link-drop {
+    background-color: #000;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: block;
+    padding: 30px;
+    font-size: 20px;
+    color: #f0ffff;
+    text-decoration: none;  
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.list-drop {
+    display: none;
+    position: absolute;
+    left: 0;
+}
+
+.item:hover .link {
+    background-color: #1362ff;
+    color: #fffff5;
+}
+
+.link-drop {
+    width: 173px;
+}
+
+.link-drop:hover {
+    background-color: #36f7ea;
+    color: #14140b;
+}
+
+.item:hover .list-drop {
+    display: block;
+}
+
+.list-second-drop {
+    display: none;
+}
+
+.item-drop:hover .list-second-drop {
+    display: block;
+}
+
+.item-drop {
+    position: relative;
+}
+
+.list-second-drop {
+    position: absolute;
+    left: 173px;
+    top: 0;
+}
+
+.list-third-drop {
+    display: none;
+}
+
+.list-third-drop {
+    position: absolute;
+}
+
+.item-sec-drop:hover .list-third-drop {
+    display: block;
+}
+
+.item-sec-drop {
+    position: relative;
+}
+
+.list-third-drop {
+    position: absolute;
+    left: 173px;
+    top: 0;
+}
